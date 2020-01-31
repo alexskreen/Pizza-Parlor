@@ -15,7 +15,7 @@ var cost = 0
 
 PizzaConstructor.prototype.pizzaCost = function (){
   if (this.size === "1"){
-    cost += 15
+    cost += 14
   }
   else if (this.size === "2"){
     cost += 10
@@ -29,6 +29,182 @@ PizzaConstructor.prototype.pizzaCost = function (){
   else {
     cost += 4
   }
+
+  if (this.crust === "1"){
+    cost += 0
+  }
+  else if (this.crust === "2"){
+    cost += 0
+  }
+  else if (this.crust === "3"){
+    cost += 2
+  }
+  else if (this.crust === "4"){
+    cost += 2
+  }
+  else if (this.crust === "5"){
+    cost += 8
+  }
+  else if (this.crust === "6"){
+    cost += 9
+  }
+
+  if (this.sauce === "1"){
+    cost += 0
+  }
+  else if (this.sauce === "2"){
+    cost += 3
+  }
+  else if (this.sauce === "3"){
+    cost += 2
+  }
+  else if (this.sauce === "4"){
+    cost += 0
+  }
+  else {
+    cost += 0
+  }
+
+  if (this.cheese === "1"){
+    cost += 0
+  }
+  else if (this.cheese === "2"){
+    cost += 1.5
+  }
+  else if (this.cheese === "3"){
+    cost += 0
+  }
+  else if (this.cheese === "4"){
+    cost -= 1
+  }
+  else {
+    cost += 0
+  }
+
+  if (this.meat1 === "1"){
+    cost += 0
+  }
+  else if (this.meat1 === "2"){
+    cost += 1.5
+  }
+  else if (this.meat1 === "3"){
+    cost += 1.5
+  }
+  else if (this.meat1 === "4"){
+    cost += 1.5
+  }
+  else if (this.meat1 === "5"){
+    cost += 1.5
+  }
+  else if (this.meat1 === "6"){
+    cost += 1.5
+  }
+
+  if (this.meat2 === "1"){
+    cost += 0
+  }
+  else if (this.meat2 === "2"){
+    cost += 1.5
+  }
+  else if (this.meat2 === "3"){
+    cost += 1.5
+  }
+  else if (this.meat2 === "4"){
+    cost += 1.5
+  }
+  else if (this.meat2 === "5"){
+    cost += 1.5
+  }
+  else if (this.meat2 === "6"){
+    cost += 1.5
+  }
+
+  if (this.meat3 === "1"){
+    cost += 0
+  }
+  else if (this.meat3 === "2"){
+    cost += 1.5
+  }
+  else if (this.meat3 === "3"){
+    cost += 1.5
+  }
+  else if (this.meat3 === "4"){
+    cost += 1.5
+  }
+  else if (this.meat3 === "5"){
+    cost += 1.5
+  }
+  else if (this.meat3 === "6"){
+    cost += 1.5
+  }
+
+  if (this.topping1 === "1"){
+    cost += 0
+  }
+  else if (this.topping1 === "2"){
+    cost += .5
+  }
+  else if (this.topping1 === "3"){
+    cost += .5
+  }
+  else if (this.topping1 === "4"){
+    cost += .5
+  }
+  else if (this.topping1 === "5"){
+    cost += .5
+  }
+  else if (this.topping1 === "6"){
+    cost += .5
+  }
+  else if (this.topping1 === "7"){
+    cost += .5
+  }
+
+  if (this.topping2 === "1"){
+    cost += 0
+  }
+  else if (this.topping2 === "2"){
+    cost += .5
+  }
+  else if (this.topping2 === "3"){
+    cost += .5
+  }
+  else if (this.topping2 === "4"){
+    cost +=.5
+  }
+  else if (this.topping2 === "5"){
+    cost += .5
+  }
+  else if (this.topping2 === "6"){
+    cost += .5
+  }
+  else if (this.topping1 === "7"){
+    cost += .5
+  }
+
+  if (this.topping3 === "1"){
+    cost += 0
+  }
+  else if (this.topping3 === "2"){
+    cost += .5
+  }
+  else if (this.topping3 === "3"){
+    cost += .5
+  }
+  else if (this.topping3 === "4"){
+    cost += .5
+  }
+  else if (this.topping3 === "5"){
+    cost += .5
+  }
+  else if (this.topping3 === "6"){
+    cost += .5
+  }
+  else if (this.topping1 === "7"){
+    cost += .5
+  }
+
+
 }
 
 var pizza = new PizzaConstructor();
