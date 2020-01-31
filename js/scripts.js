@@ -203,14 +203,43 @@ PizzaConstructor.prototype.pizzaCost = function (){
   else if (this.topping1 === "7"){
     cost += .5
   }
-
-
 }
 
+displayPrice = function(){
+  $("#finalPrice").show();
+  $("#priceSpan").text(cost);
+}
 var pizza = new PizzaConstructor();
+
+var showPizzaCustomizer = function (){
+  $(".pizzaFormContainer").fadeToggle();
+  $("#deliveryOrCarryout").fadeToggle();
+}
+var showAddressForm = function (){
+  $(".customerInformationForm").fadeToggle();
+}
 
 
 $(document).ready(function () {
+  $("#deliveryButton").click(function(event){
+    showAddressForm();
+    event.preventDefault();
+  })
+  $("#carryOutButton").click(function(event){
+    showPizzaCustomizer();
+    event.preventDefault();
+  })
+  $("#customerInformationSubmitButton").click(function(event){
+    showPizzaCustomizer();
+    var firstname = $("#firstname").val();
+    var lastname = $("#lastname").val();
+    var address = $("#address").val();
+    var city = $("#city").val();
+    var state = $("#state").val();
+    console.log (firstname, lastname, address, city, state);
+  });
+
+  
   $("form#pizzaForm").submit(function (event) {
     event.preventDefault();
 
@@ -225,10 +254,11 @@ $(document).ready(function () {
     var topping2F = $("#topping2").val();
     var topping3F = $("#topping3").val();
     var pizza = new PizzaConstructor (sizeF, crustF, sauceF, cheeseF, meat1F, meat2F, meat3F, topping1F, topping2F, topping3F);
-    console.log(pizza.size);
-
     pizza.pizzaCost();
     console.log(cost);
+    console.log(pizza)
+    displayPrice();
+    cost = 0;
 
   });
   });

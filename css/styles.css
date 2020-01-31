@@ -35,3 +35,14 @@ p {
   background-color: transparent;
   color: antiquewhite;
 }
+
+#finalPrice {
+  display: none;
+}
+
+.pizzaFormContainer {
+  display: none;
+}
+.customerInformationForm {
+  display: none;
+}
