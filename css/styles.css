@@ -1,7 +1,7 @@
 #submitButton {
   background-image : url(https://st3.depositphotos.com/1000647/13219/i/1600/depositphotos_132193114-stock-photo-pepperoni-pizza-closeup.jpg);
   width: 60%;
-    height: 50px;
+    height: 60px;
     /* display: inline-block; */
     align-content: center;
     margin-left: auto;
@@ -9,6 +9,7 @@
     background-position : center center;
     background-repeat:no-repeat;
     color: black;
+    font-size: larger;
 }
 
 body {
