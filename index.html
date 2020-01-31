@@ -8,6 +8,8 @@
   <script src="js/scripts.js"></script>
   <title>Pizza Parlor</title>
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body style="background-image: url('https://cdn.hipwallpaper.com/i/70/10/7u9Zg8.jpg');">
 
 <body>
   <div class="container">
@@ -17,6 +19,7 @@
       <p>We now offer <strong>CUSTOM PIES!</strong> Build your wildest creation below!</p>
     </div>
     <div class="pizzaFormContainer">
+      <form id="pizzaForm">
       <div class="pizzaForm col-8 padding-2">
         <h3>What size pie would you like?</h3>
         <select class="form-control" id="size">
@@ -57,7 +60,75 @@
           <option value="4">No cheese</option>
         </select>
       </div>
-
+      <div class="pizzaForm col-8 padding-2">
+        <h3>Meat 1</h3>
+        <select class="form-control" id="meat1">
+          <option value="1">None</option>
+          <option value="2">Pepperoni</option>
+          <option value="3">Sasuage</option>
+          <option value="4">Bacon</option>
+          <option value="5">Grilled Chicken</option>
+          <option value="6">Ham</option>
+        </select>
+      </div>
+      <div class="pizzaForm col-8 padding-2">
+        <h3>Meat 2</h3>
+        <select class="form-control" id="meat2">
+          <option value="1">None</option>
+          <option value="2">Pepperoni</option>
+          <option value="3">Sasuage</option>
+          <option value="4">Bacon</option>
+          <option value="5">Grilled Chicken</option>
+          <option value="6">Ham</option>
+        </select>
+      </div>
+      <div class="pizzaForm col-8 padding-2">
+        <h3>Meat 3</h3>
+        <select class="form-control" id="meat3">
+          <option value="1">None</option>
+          <option value="2">Pepperoni</option>
+          <option value="3">Sasuage</option>
+          <option value="4">Bacon</option>
+          <option value="5">Grilled Chicken</option>
+          <option value="6">Ham</option>
+        </select>
+      </div>
+      <div class="pizzaForm col-8 padding-2">
+        <h3>Topping 1</h3>
+        <select class="form-control" id="topping1">
+          <option value="1">Onion</option>
+          <option value="2">Mushroom</option>
+          <option value="3">Olive</option>
+          <option value="4">Pineapple</option>
+          <option value="4">Jalapeño</option>
+          <option value="4">Garlic</option>
+        </select>
+      </div>
+      <div class="pizzaForm col-8 padding-2">
+        <h3>Topping 1</h3>
+        <select class="form-control" id="topping2">
+          <option value="1">Onion</option>
+          <option value="2">Mushroom</option>
+          <option value="3">Olive</option>
+          <option value="4">Pineapple</option>
+          <option value="4">Jalapeño</option>
+          <option value="4">Garlic</option>
+        </select>
+      </div>
+      <div class="pizzaForm col-8 padding-2">
+        <h3>Topping 1</h3>
+        <select class="form-control" id="topping3">
+          <option value="1">Onion</option>
+          <option value="2">Mushroom</option>
+          <option value="3">Olive</option>
+          <option value="4">Pineapple</option>
+          <option value="4">Jalapeño</option>
+          <option value="4">Garlic</option>
+        </select>
+      </div>
+      
+      <button class="btn btn-lg" type="submit" id="submitButton">Are you silly? Send it!</button>
+    </form>
     </div>
   </div>
 </body>
