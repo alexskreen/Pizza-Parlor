@@ -1,20 +1,24 @@
 # _Pizza Parlor_
 
-#### _This program will allow a user to create a custom pizza and see how much that pizza costs, January 31st, 2020_
-
 #### By _**Alex Skreen**_
+
+#### January 31st, 2020
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This program has a form for a pizza with multiple options for the user to customize and pick from. Once the user submits it will display the pizza they built and how much it will cost_
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Click the green "clone or download" button_
+* _Open terminal_
+* _Navigate to desktop by typing "cd .." into terminal, then typing "cd desktop"_
+* _Clone directory to desktop by typing "git clone https://github.com/alexskreen/Pizza-Parlor_
+* _Type "cd pizz-parlor" into terminal_
+* _Type "code ." into terminal. This will open VS code and show you the files located in the cloned directory_
+* _Type "open index.html" into terminal. This will open the website_
+* _Fill out user form box, and click the submit button_
+* _Get your result!_
 
 |   Behavior    |   Input     |     Output    |
 |--------------:|:-----------:|--------------:|
@@ -26,18 +30,28 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_There are no known bugs at this time. If you find one please contact me using the information below._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+*_Alex Skreen_*
+*_skreenalex@gmail.com_*
+*_503-503-5035_*
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* _terminal_
+* _Visual Studio Code_
+* _Git_
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _JavaScript_
+* _jQuery_
+* _Chrome_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*licensed under the MIT licensing act*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2020 **_Alex Skreen_**
