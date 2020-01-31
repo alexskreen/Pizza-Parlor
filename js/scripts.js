@@ -11,8 +11,27 @@ function PizzaConstructor(size, crust, sauce, cheese, meat1, meat2, meat3, toppi
   this.topping3 = topping3;
 }
 
-var pizza = new PizzaConstructor
+var cost = 0
 
+PizzaConstructor.prototype.pizzaCost = function (){
+  if (this.size === "1"){
+    cost += 15
+  }
+  else if (this.size === "2"){
+    cost += 10
+  }
+  else if (this.size === "3"){
+    cost += 8
+  }
+  else if (this.size === "4"){
+    cost += 6
+  }
+  else {
+    cost += 4
+  }
+}
+
+var pizza = new PizzaConstructor();
 
 
 $(document).ready(function () {
@@ -31,6 +50,9 @@ $(document).ready(function () {
     var topping3F = $("#topping3").val();
     var pizza = new PizzaConstructor (sizeF, crustF, sauceF, cheeseF, meat1F, meat2F, meat3F, topping1F, topping2F, topping3F);
     console.log(pizza.size);
+
+    pizza.pizzaCost();
+    console.log(cost);
 
   });
   });
