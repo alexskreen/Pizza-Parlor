@@ -1,3 +1,20 @@
+function PizzaConstructor(size, crust, sauce, cheese, meat1, meat2, meat3, topping1, topping2, topping3) {
+  this.size = size;
+  this.crust = crust;
+  this.sauce = sauce;
+  this.cheese = cheese;
+  this.meat1 = meat1;
+  this.meat2 = meat2;
+  this.meat3 = meat3;
+  this.topping1 = topping1;
+  this.topping2 = topping2;
+  this.topping3 = topping3;
+}
+
+var pizza = new PizzaConstructor ();
+
+
+
 $(document).ready(function () {
   $("form#pizzaForm").submit(function (event) {
     event.preventDefault();
