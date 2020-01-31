@@ -2,10 +2,35 @@
   background-image : url(https://st3.depositphotos.com/1000647/13219/i/1600/depositphotos_132193114-stock-photo-pepperoni-pizza-closeup.jpg);
   width: 60%;
     height: 50px;
-    display: inline-block;
-    /* margin-right: 5px; */
-    vertical-align: text-top;
+    /* display: inline-block; */
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
     background-position : center center;
     background-repeat:no-repeat;
     color: black;
+}
+
+body {
+  background: 
+}
+
+h1 {
+  color: antiquewhite;
+}
+
+h2 {
+  color: antiquewhite;
+}
+
+h3 {
+  color: antiquewhite;
+}
+p {
+  color: antiquewhite;
+}
+
+.form-control {
+  background-color: transparent;
+  color: antiquewhite;
 }
