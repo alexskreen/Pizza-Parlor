@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Pizza Parlor_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _This program will allow a user to create a custom pizza and see how much that pizza costs, January 31st, 2020_
 
-#### By _**{List of contributors}**_
+#### By _**Alex Skreen**_
 
 ## Description
 
@@ -18,8 +18,11 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 |   Behavior    |   Input     |     Output    |
 |--------------:|:-----------:|--------------:|
-| Create form. | user input |  add user input to list |
-| cross off list items | on click | strikethrough list item
+| Create form. | user input |  add user input to object |
+| Create pizza constructor | a template for building a customizeable pizza | pizza with multiple changeable fields |
+| Create prototype for pizza constructor | A function that will run on the custom pizza the user built using the pizza constructor | The final price of the pizza will update |
+| Display the piza order in DOM | User cuztomizes pizza | Pizza displays in DOM |
+| Use prototype to display cost of pizza | User customizes pizza | Pizza cost displays in DOM
 
 ## Known Bugs
 
