@@ -135,7 +135,16 @@
     </form>
     </div>
     <div class="jumbotron" id="finalPrice">
-      Thank you for carefully crafting your own personal masterpiece. This isn't my idea of a perfect pie, but to each their own. This abomination will cost you $<span id="priceSpan"></span>. 
+      <p>Thank you for carefully crafting your own personal masterpiece. This isn't my idea of a perfect pie, but to each their own. This abomination will cost you $<span id="priceSpan"> </span>.</p>
+      <div id="deliveryConfirmation">
+      <p>This order will be delivered to:</p>
+      <ul>
+        <li><span id="userFirstName"></span> <span id="userLastName"></span></li>
+        <li><span id="userAddress"></span></li>
+        <li><span id="userCity"></span>, <span id="userState"></span> <span id="userZipcode"></span></li>
+      </ul>
+      <p>Our driver will call you at <span id="userPhoneNumber"></span> when they are outside</p>
+      </div>
     </div>
     <div id="deliveryOrCarryout">
       <h3>Is this order for delivery or carry out?</h3>
@@ -143,16 +152,18 @@
       <button class="btn btn-lg btn-dark" type="button" id="carryOutButton">Carryout</button>
     </div>
     <div class="customerInformationForm">
-      <form id="customerInformation"></form>
-      First name:<br>
-      <input type="text" name="firstname" id="firstname"><br>
-      Last name:<br>
-      <input type="text" name="lastname" id="lastname"><br>
-      Address:<br>
+      <form id="customerInformation">
+        <h3>First Name:</h3>
+      <input type="text" name="firstname" id="firstName"><br>
+      <h3>Last Name:</h3>
+      <input type="text" name="lastname" id="lastName"><br>
+      <h3>Phone Number:</h3>
+      <input type="text" name="lastname" id="phoneNumber"><br>
+      <h3>Address:</h3>
       <input type="text" name="address" id="address"><br>
-      City:<br>
+      <h3>City:</h3>
       <input type="text" name="city" id="city"><br>
-      State:<br><select id="state">
+      <h3>State:</h3><select id="state">
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
         <option value="AZ">Arizona</option>
@@ -204,13 +215,12 @@
         <option value="WV">West Virginia</option>
         <option value="WI">Wisconsin</option>
         <option value="WY">Wyoming</option>
-      </select>
-
+      </select> <br>
+      <h3>Zipcode:</h3>
+      <input type="text" name="zipcode" id="zipcode"><br>
       <input type="submit" value="Submit" id="customerInformationSubmitButton">
       <input type="reset" id="customerInformationResetButton">
-
-
-      
+    </form>
     </div>
   </div>
 </body>

@@ -11,6 +11,16 @@ function PizzaConstructor(size, crust, sauce, cheese, meat1, meat2, meat3, toppi
   this.topping3 = topping3;
 }
 
+function UserConstructor(firstName, lastName, phoneNumber, address, city, state, zipcode) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.phoneNumber = phoneNumber;
+  this.address = address;
+  this.city = city;
+  this.state = state;
+  this.zipcode = zipcode;
+}
+
 var cost = 0
 
 PizzaConstructor.prototype.pizzaCost = function (){
@@ -208,6 +218,7 @@ PizzaConstructor.prototype.pizzaCost = function (){
 displayPrice = function(){
   $("#finalPrice").show();
   $("#priceSpan").text(cost);
+  $(".pizzaFormContainer").fadeToggle();
 }
 var pizza = new PizzaConstructor();
 
@@ -218,11 +229,27 @@ var showPizzaCustomizer = function (){
 var showAddressForm = function (){
   $(".customerInformationForm").fadeToggle();
 }
-
+var hideAddressForm = function(){
+  $(".customerInformationForm").fadeToggle();
+}
+var hideDeliveryorCheckout = function() {
+  $("#deliveryOrCarryout").fadeToggle();
+}
+// var showUserConfirmation = function() {
+//   $("#userFirstName").text(firstNameF);
+//   $("#userLastName").text(lastNameF);
+//   $("#userAddress").text(addressF);
+//   $("#userCity").text(cityF);
+//   $("#userState").text(stateF);
+//   $("#userZipcode").text(zipcodeF);
+//   $("#userPhoneNumber").text(phoneNumberF);
+//   $("#deliveryConfirmation").fadeToggle();
+// }
 
 $(document).ready(function () {
   $("#deliveryButton").click(function(event){
     showAddressForm();
+    hideDeliveryorCheckout();
     event.preventDefault();
   })
   $("#carryOutButton").click(function(event){
@@ -230,13 +257,28 @@ $(document).ready(function () {
     event.preventDefault();
   })
   $("#customerInformationSubmitButton").click(function(event){
+    event.preventDefault();
     showPizzaCustomizer();
-    var firstname = $("#firstname").val();
-    var lastname = $("#lastname").val();
-    var address = $("#address").val();
-    var city = $("#city").val();
-    var state = $("#state").val();
-    console.log (firstname, lastname, address, city, state);
+    hideAddressForm();
+    hideDeliveryorCheckout();
+    var firstNameF = $("#firstName").val();
+    var lastNameF = $("#lastName").val();
+    var phoneNumberF = $("#phoneNumber").val();
+    var addressF = $("#address").val();
+    var cityF = $("#city").val();
+    var stateF = $("#state").val();
+    var zipcodeF = $("#zipcode").val();
+    var user = new UserConstructor (firstNameF, lastNameF, phoneNumberF, addressF, cityF, stateF, zipcodeF);
+  $("#userFirstName").text(firstNameF);
+  $("#userLastName").text(lastNameF);
+  $("#userAddress").text(addressF);
+  $("#userCity").text(cityF);
+  $("#userState").text(stateF);
+  $("#userZipcode").text(zipcodeF);
+  $("#userPhoneNumber").text(phoneNumberF);
+  $("#deliveryConfirmation").fadeToggle();
+    // showUserConfirmation();
+
   });
 
   
@@ -255,8 +297,6 @@ $(document).ready(function () {
     var topping3F = $("#topping3").val();
     var pizza = new PizzaConstructor (sizeF, crustF, sauceF, cheeseF, meat1F, meat2F, meat3F, topping1F, topping2F, topping3F);
     pizza.pizzaCost();
-    console.log(cost);
-    console.log(pizza)
     displayPrice();
     cost = 0;
 

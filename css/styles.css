@@ -27,9 +27,9 @@ h2 {
 h3 {
   color: antiquewhite;
 }
-p {
+/* p {
   color: antiquewhite;
-}
+} */
 
 .form-control {
   background-color: transparent;
@@ -44,5 +44,8 @@ p {
   display: none;
 }
 .customerInformationForm {
+  display: none;
+}
+#deliveryConfirmation {
   display: none;
 }
